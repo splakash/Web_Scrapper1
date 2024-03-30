@@ -20,7 +20,6 @@ if keyword:
                 img = figures[i].find("img")
                 list = img["srcset"].split("?")
                 anch=anchor[i]
-                print(anch["href"])
                 if i % 2 == 0:
                     col1.image(list[0])
                     btn=col1.button("Download",key=str(index)+str(i))
